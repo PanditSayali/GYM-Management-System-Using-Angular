@@ -1,1 +1,107 @@
 /* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "ngx-toastr/toastr";
+body
+{
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.home{
+    background-image: url('assets/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    height: 100vh;
+  }
+.p 
+{
+    text-align: center;
+    
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  margin-right: 650px;
+}
+
+.btn{
+    width: 200px;
+    height: 40px;
+    border: 3px solid #ff4742;
+    border-radius: 40px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1em;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .btn:hover {
+    background: #ff4742;
+    color: white;
+    font-size: 1em;
+  }
+
+/* Navbar styles */
+.navbar {
+    color: #fff; /* Set the text color for better visibility */
+    padding: 5px; /* Add padding for better aesthetics */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar img{
+    height:40px;
+    width: auto;
+    vertical-align: middle;
+}
+.navbar a {
+    color: black; /* Set link color */
+    text-decoration: none; /* Remove underlines from links */
+    margin: 0 5px; /* Add spacing between navbar links */
+}
+#foot{
+  background-color: rgba(191, 233, 233, 0.663);
+  color: black; 
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+ margin-top: 10px;
+ 
+}
+.social-links {
+  text-align: center;
+  justify-content: space-between;
+  padding-right: 55px;
+}
+
+.social-links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links .fa {
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  border: 1px solid;
+  padding-right: 10px;
+}

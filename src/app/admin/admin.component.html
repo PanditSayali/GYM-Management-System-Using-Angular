@@ -1,0 +1,66 @@
+
+<div class="container">
+  <h1> Register Data</h1>
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Contact</th>
+        <th>Gender</th>
+        <th>Age</th>
+        <th>Package</th>
+        <th>DOJ</th>
+        <th>Payment</th>
+        <th>Action</th>
+      </tr>
+      </thead>
+      <tbody>
+    <tr *ngFor="let user of users">
+        <td><span>{{user.id}}</span></td>
+        <td><span>{{user.name}}</span></td>
+        <td><span>{{user.email}}</span></td>
+        <td><span>{{user.password}}</span></td>
+        <td><span>{{user.contact}}</span></td>
+        <td><span>{{user.gender}}</span></td>
+        <td><span>{{user.age}}</span></td>
+        <td><span>{{user.membership}}</span></td>
+        <td><span>{{user.doj}}</span></td>
+        <td><span>{{user.payment}}</span></td>
+        <td>
+         
+          <button class="btn btn-sm btn-warning" (click)="goToEditUser(user.id)">
+            <i class="fa fa-edit"></i>Edit</button>
+          <button class="btn btn-sm btn-danger"(click)="deleteUsers(user.id)">
+            <i class="fa fa-remove"></i>Delete</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <div class="container">
+    <h1>Contact Data</h1>
+      <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Message</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let contact of contacts">
+        <td><span>{{contact.id}}</span></td>
+        <td><span>{{contact.name}}</span></td>
+        <td><span>{{contact.email}}</span></td>
+        <td><span>{{contact.address}}</span></td>
+        <td><span>{{contact.message}}</span></td>
+      </tr>
+      </tbody>
+    </table>

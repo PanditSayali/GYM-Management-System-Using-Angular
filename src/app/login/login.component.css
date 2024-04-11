@@ -1,0 +1,100 @@
+#login {
+  background-image: url('/assets/t-min.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  height: 100vh;
+
+
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  margin-right: 650px;
+}
+
+form {
+
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  padding: 50px 35px;
+}
+
+.loginForm {
+  margin-top: 30px;
+  margin: 0 auto;
+  width: 250px;
+  color: white;
+  padding-top: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.loginForm h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.loginForm label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.loginForm input[type="email"],
+.loginForm input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.loginForm input[type="checkbox"] {
+  margin-right: 10px;
+
+}
+
+.loginForm a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.loginForm button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.loginForm button:hover {
+  background-color: #0056b3;
+}

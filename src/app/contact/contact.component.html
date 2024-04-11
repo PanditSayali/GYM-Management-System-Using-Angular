@@ -1,0 +1,53 @@
+<section id="contact-home">
+<main>
+  <div>
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you. Submit a message below and  we'll <br>forward your inquiry to the appropriate department.</p>
+
+  </div>
+</main>
+</section>
+<section >
+<div class="contact-midlle">
+  <h1>(480) 565-7878</h1>
+  <h3>Hours of Operation: </h3>
+  <br>
+  <p>
+    Monday - Thursday: 5:30am - 10pm<br>
+    Friday: 5:30am - 9pm<br>
+    Saturday & Sunday: 8am - 8pm</p>
+</div>
+</section>
+<section id="contact">
+  <main>
+    <form [formGroup]="contactForm"> 
+      <div class="contact-form">
+
+        <div class="form-group">
+          <label for="email">Email: </label><br>
+          <input type="email" name="email" id="email" formControlName ="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="name">Name: </label><br>
+          <input type="text" name="name" id="name"  formControlName ="name" placeholder="Enter your Name">
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address: </label><br>
+          <input type="text" name="address" id="address" formControlName ="address" placeholder="Enter your Address">
+        </div>
+
+        <div class="form-group">
+          <label for="name">Message: </label><br>
+          <input type="text" name="message" id="message" formControlName ="message">
+        </div>
+
+        <div class="form-group" id="button">
+    
+          <input type="submit" name="submit" id="submit" (click)="postcontactForm()">
+        </div>
+
+      </div>
+    </form>
+  </main>
+</section>

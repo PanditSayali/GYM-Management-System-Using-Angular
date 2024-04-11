@@ -1,0 +1,22 @@
+<section id="login">
+
+  <div class="logo-container">
+    <img src="assets/fitness gym.png" alt="">
+  </div>
+  <div class="loginForm">
+  <form [formGroup]="loginform">
+    <h3>Login Here</h3>
+
+    <label for="email">Username</label>
+    <input type="email" formControlName ="email" placeholder="Email id" id="email">
+
+    <label for="password">Password</label>
+    <input type="password" formControlName ="password" placeholder="Password" id="password">
+
+    <label><input type="checkbox"> Remember me</label>
+    <a href="#">Forgot Password?</a>
+    <button name="login" type="submit" (click)="postLoginform()">Login</button>
+</form>
+</div>
+</section>
+
